@@ -4,7 +4,9 @@ define([ 'jquery' ], function($) {
   return {
     async : function(value) {
     	var deferred = $.Deferred();
-    	deferred.resolve(value);
+        setTimeout(function(){
+            deferred.resolve(value);
+        }, 100);
     	return deferred.promise();
     },
 

@@ -39,6 +39,7 @@ define(function() {
 
     useArguments : function() {
         var sum = 0;
+        console.log(arguments);
         var l = arguments.length;
         for(var i=0; i<l; i++)
         {
